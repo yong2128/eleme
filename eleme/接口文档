@@ -1,0 +1,76 @@
+1、获取管理员信息（登录）
+    地址：http://127.0.0.1/login
+    访问的形式：get
+    传递的参数：
+        adminName
+        password
+    返回的内容：
+        {
+            ok : 0(失败)，1(成功)
+            adminId,
+            adminName,
+            msg
+        }
+2、添加管理员
+    地址：http://127.0.0.1/register
+    访问的形式：post
+    传递的参数：
+        adminName
+        password
+    返回的内容：
+        {
+            ok : 0(失败)，1(成功)
+            msg
+        }
+3、获取管理员日志列表
+    地址：http://127.0.0.1/getAdminLogList
+    访问的形式：get
+    传递的参数：
+        {}
+    返回的内容：
+        {
+            ok : 0(失败)，1(成功)
+            msg
+        }
+4、删除管理员日志
+    地址：http://127.0.0.1/delAdminLogList
+    访问的形式：get
+    传递的参数：
+        id
+    返回的内容：
+        {
+            ok : 0(失败)，1(成功)
+            msg
+        }
+5、获取管理员信息列表
+    地址：http://127.0.0.1/getAdminList
+    访问的形式：get
+    传递的参数：
+        id
+    返回的内容：
+        {
+            ok : 0(失败)，1(成功)
+            msg
+        }
+6、删除管理员
+    地址：http://127.0.0.1/delAdminList
+    访问的形式：get
+    传递的参数：
+        id
+    返回的内容：
+        {
+            ok : 0(失败)，1(成功)
+            msg
+        }
+7、修改管理员账户和密码
+    地址：http://127.0.0.1/update
+    访问的形式：get
+    传递的参数：
+        id
+        adminName
+        password
+    返回的内容：
+        {
+            ok : 0(失败)，1(成功)
+            msg
+        }
